@@ -1,0 +1,12 @@
+body {
+    background: #000;
+}
+ 
+.jumbotron {
+    padding: 0;
+}
+
+.jumbotron img {
+    width: 100%;
+    object-fit: contain;
+}
