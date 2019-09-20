@@ -1,0 +1,21 @@
+{
+  "name": "kcfr4r",
+  "version": "1.0.0",
+  "description": "KCF Row for Reveille",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "kcf",
+    "r4r"
+  ],
+  "author": "Steven Owens",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
