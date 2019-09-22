@@ -1,4 +1,8 @@
 body {
+    background:white;
+}
+
+.container-fluid {
     background: #000;
 }
  
@@ -7,6 +11,22 @@ body {
 }
 
 .jumbotron img {
-    width: 100%;
+    width: 101%;
     object-fit: contain;
+}
+
+#logo {
+    width: 75%;
+    object-fit: contain;
+}
+
+.col-md-4 {
+    color: whitesmoke;
+    background: dimgray;
+}
+
+.athlete-cards {
+    background: white;
+    margin: 7px;
+    color: black;
 }
