@@ -1,9 +1,15 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
     background:white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container-fluid {
     background: #000;
+    margin: 0 auto;
 }
  
 .jumbotron {
@@ -20,6 +26,20 @@ body {
     object-fit: contain;
 }
 
+#event-details {
+    margin: 0 auto;
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#purpose-header > * {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+
 .col-md-4 {
     color: whitesmoke;
     background: dimgray;
@@ -30,3 +50,27 @@ body {
     margin: 7px;
     color: black;
 }
+
+@media (min-width: 576px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 90%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    html {
+      font-size: 100%;
+    }
+   }
+  
+  @media (min-width: 1200px) {
+    html {
+      font-size: 135%;
+    }
+   }
