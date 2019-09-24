@@ -3,8 +3,9 @@ html {
 }
 
 body {
-    background:white;
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
+    background-image: url(images/rowers_all_lined_up.jpg);
 }
 
 .navbar-brand {
@@ -12,16 +13,17 @@ body {
 }
 
 .container-fluid {
-    background: #000;
+    /* background: url(images/rowers_all_lined_up.jpg); */
     margin: 0 auto;
 }
  
 .jumbotron {
     padding: 0;
+    opacity: 0.9;
 }
 
 .jumbotron img {
-    width: 101%;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -49,7 +51,7 @@ body {
 }
 
 .athlete-cards {
-    margin: 7px;
+    margin-top: 10px;
     color: black;
     background: #8e9eab;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
