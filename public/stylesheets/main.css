@@ -7,6 +7,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar-brand {
+    width: 250px;
+}
+
 .container-fluid {
     background: #000;
     margin: 0 auto;
@@ -18,11 +22,6 @@ body {
 
 .jumbotron img {
     width: 101%;
-    object-fit: contain;
-}
-
-#logo {
-    width: 75%;
     object-fit: contain;
 }
 
