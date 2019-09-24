@@ -45,6 +45,11 @@ body {
     background: dimgray;
 }
 
+/* Sponsors */
+.list-group-item {
+    border: none;
+}
+
 .athlete-cards {
     background: white;
     margin: 7px;
