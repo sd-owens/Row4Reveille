@@ -25,6 +25,11 @@ body {
     object-fit: contain;
 }
 
+#sponsors .list-group {
+    flex-direction: row;
+    align-items: center;
+}
+
 #event-details {
     margin: 0 auto;
     background: #8e9eab;  /* fallback for old browsers */
@@ -59,14 +64,15 @@ body {
     html {
       font-size: 75%;
     }
-    ul#sponsors.list-group {
-        display: inline;
-    }
   }
   
   @media (min-width: 768px) {
     html {
       font-size: 90%;
+    }
+    #sponsors .list-group {
+        flex-direction: column;
+        align-items: center;
     }
   }
   
