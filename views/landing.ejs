@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Row for Reveille presented by Kitsap CrossFit</title>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="/stylesheets/landing.css">
-        <!-- google fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
-        <!-- modernizr -->
-        <script 
-        src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-        type="text/Javascript" async></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Row for Reveille presented by Kitsap CrossFit</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/landing.css" />
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <!-- modernizr -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+      type="text/Javascript"
+      async
+    ></script>
 
-        <!-- embedded countdown timer script -->
-        <script defer language="JavaScript" src="/javascript/countdown.js"></script>
-    </head>
-<body>
+    <!-- embedded countdown timer script -->
+    <script defer language="JavaScript" src="/javascript/countdown.js"></script>
+  </head>
+  <body>
     <div class="container-fluid">
-        <div id="landing-header">
-            <div id="logo-splash">
-                <h1>Row For Reveille 2020</h1>
-                <p>presented by Kitsap Crossfit <sup>&reg;</sup></p>
-            </div>
-            <div id="date">
-                    <h6>Sat, Jan 18<sup>th</sup>, 2020</h6>
-            </div>
-            <div class="text-center">
-                    <a id="signUp" href="\home" class="btn btn-danger">Sign Up Now!</a>
-            </div>
-            <div class="countdown-box">
-
-                    <p id="countdown" class="text-center"></p>
-            </div>
+      <div id="landing-header">
+        <div id="logo-splash">
+          <!-- <h1>Row For Reveille 2020</h1> -->
+          <h1><img class="img-fluid" src="images/R4R.png" alt="" /></h1>
+          <h2>24 hours of rowing</h2>
+          <h2>for our veterans!</h2>
+          <p>presented by Kitsap Crossfit <sup>&reg;</sup></p>
         </div>
+        <div id="date">
+          <h6>Sat, Jan 18<sup>th</sup>, 2020</h6>
+        </div>
+        <div class="text-center">
+          <a id="signUp" href="\home" class="btn btn-danger">Sign Up Now!</a>
+        </div>
+        <div class="countdown-box">
+          <p id="countdown" class="text-center"></p>
+        </div>
+      </div>
 
+      <div>
         <ul class="slideshow">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
+      </div>
 
-<% include ./partials/footer.ejs %>
+      <% include ./partials/footer.ejs %>
+    </div>
+  </body>
+</html>
