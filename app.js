@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(`${__dirname}/public`));
 
 app.get('/', async (req, res) => {
-	await res.render('landing');
+	await res.render('home');
 });
 
 app.get('/home', async (req, res) => {

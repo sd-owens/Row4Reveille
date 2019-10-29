@@ -1,9 +1,10 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: black;
+  background-color: white;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -11,9 +12,9 @@ body {
   margin-bottom: 0px;
 }
 
-/* .navbar-brand {
-  width: 50px;
-} */
+.navbar-brand img {
+  width: 75px;
+}
 
 .jumbotron {
   background-size: cover;
@@ -74,6 +75,9 @@ a:hover {
   font-size: 105%;
   color: red;
   text-decoration-line: none;
+}
+
+#leaderboard_link:hover {
 }
 
 /* Sponsors */
