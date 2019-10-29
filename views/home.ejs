@@ -17,7 +17,8 @@
     </div>
   </div>
 </div>
-<!-- main content section -->
+
+<!-- main content section below jumbotron -->
 <div id="main" class="container-fluid pt-3">
   <!-- sponsors -->
   <div class="row text-center">
@@ -68,7 +69,8 @@
         </li>
       </ul>
     </div>
-    <!-- main information -->
+
+    <!-- event details / information -->
     <div class="col-md-8 order-1 order-md-2">
       <div id="event-details" class="text-center p-2">
         <div id="purpose-header">
@@ -145,7 +147,7 @@
             <a href="https://www.facebook.com/Kitsap-CrossFit-152476115259/">Facebook Page</a>.
           </p>
           <div class="text-center mb-3">
-            <div class="btn btn-dark">View the Leaderboards</div>
+            <a class="btn btn-dark" target="_blank" href="https://app.throwdowns.com/competitions/row-for-reveille/leaderboard">View the Leaderboards</a>
           </div>
           <div class="text-center">
             <small
@@ -158,30 +160,35 @@
         </div>
       </div>
     </div>
+
     <!-- links to external webpages -->
     <div id="links" class="col-md-2 order-3 order-md-3">
       <div class="text-center">
         <ul class="list-group">
           <li class="list-group-item">
-            <a target="_blank" href="http://thereveilleproject.org/">The Reveille Project</a>
+            <a target="_blank" href="https://app.throwdowns.com/competitions/row-for-reveille/registration"
+              >Register as an athlete</a
+            >
           </li>
           <li class="list-group-item">
-            <a target="_blank" href="https://www.classy.org/give/142751/#!/donation/checkout"
-              >I want to Donate Now!</a
-            >
+            <a target="_blank" href="https://app.throwdowns.com/competitions/row-for-reveille/leaderboard"
+              >View the leaderboards
+            </a>
           </li>
           <li class="list-group-item">
             <a
               target="_blank"
               href="https://www.classy.org/campaign/the-reveille-project-or-2017/c142751/fundraiser/create?amount=NaN"
-              >Make an Athlete Fundraiser Page</a
+              >Create a fundraiser page</a
             >
           </li>
           <li class="list-group-item">
-            <a href="#"
-              >View the Leaderboards
-              <sub>(coming soon)</sub>
-            </a>
+            <a target="_blank" href="https://www.classy.org/give/142751/#!/donation/checkout"
+              >Make a donation</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a target="_blank" href="http://thereveilleproject.org/">About The Reveille Project</a>
           </li>
         </ul>
       </div>
@@ -190,7 +197,7 @@
 </div>
 
 <!-- leaderboards from throwdowns -->
-<div id="leaderboards" class="row text-center">
+<!-- <div id="leaderboards" class="row text-center">
   <div class="col-md-4">
     <div class="athlete-cards">
       <h4>Overall</h4>
@@ -224,6 +231,6 @@
       </ul>
     </div>
   </div>
-</div>
+</div> -->
 
 <% include ./partials/footer.ejs %>
