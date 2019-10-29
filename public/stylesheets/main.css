@@ -30,7 +30,7 @@ body {
 }
 
 .jumbotron img {
-  padding-top: 10vh;
+  padding-top: 20vh;
   width: 75%;
 }
 
@@ -75,9 +75,6 @@ a:hover {
   font-size: 105%;
   color: red;
   text-decoration-line: none;
-}
-
-#leaderboard_link:hover {
 }
 
 /* Sponsors */
