@@ -1,18 +1,18 @@
 $(document).ready(function() {
-  const headerHeight = $('.navbar').outerHeight(); // Target your header navigation here
+	// const headerHeight = $('.navbar').outerHeight(); // Target your header navigation here
 
-  $('#logo-splash a').click(function(e) {
-    const targetHref = $(this).attr('href');
+	$('#logo-splash a').click(function(e) {
+		const targetHref = $(this).attr('href');
 
-    $('html, body').animate(
-      {
-        scrollTop: $(targetHref).offset().top - headerHeight
-      },
-      500
-    );
+		$('html, body').animate(
+			{
+				scrollTop: $(targetHref).offset().top // - headerHeight
+			},
+			500
+		);
 
-    e.preventDefault();
-  });
+		e.preventDefault();
+	});
 });
 
 // jQuery(document).ready(function() {

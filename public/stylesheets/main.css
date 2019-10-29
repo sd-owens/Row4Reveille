@@ -9,11 +9,79 @@ body {
 }
 
 .navbar {
-  margin-bottom: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* margin-bottom: 0px; */
+}
+
+.navbar-default.transparent {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  letter-spacing: -1px;
+  font-weight: bolder;
+  /* background-color: white; */
+}
+
+/* .navbar-default .navbar-brand:hover {
+  color: rgba(219, 1, 1, 0.5);
+} */
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: rgba(241, 10, 10, 0.3);
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 5px 0px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: rgba(241, 10, 10, 0.5);
+}
+.navbar-collapse.in {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-default .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-default .navbar-toggler:hover,
+.navbar-default .navbar-toggler:focus {
+  background-color: rgba(241, 10, 10, 0.5);
+}
+
+.navbar-default .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  /* padding: 9px 10px;
+  margin-top: 8px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 8px; */
+  border-color: #fff;
 }
 
 .navbar-brand img {
-  width: 75px;
+  width: 35px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10%;
+  margin-right: 5px;
 }
 
 .jumbotron {
@@ -34,9 +102,14 @@ body {
   width: 75%;
 }
 
-#logo-splash {
+#logo-splash p {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
   align-items: center;
   margin: 0 auto;
+}
+
+#logo-splash .btn {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 
 .jumbotron h2 {
