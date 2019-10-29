@@ -1,20 +1,24 @@
-// Scroll to specific values
-// scrollTo is the same
+$(document).ready(function() {
+  const headerHeight = $('.navbar').outerHeight(); // Target your header navigation here
 
-// window.scroll({
-// 	top: 2500,
-// 	left: 0,
-// 	behavior: 'smooth'
-// });
+  $('#logo-splash a').click(function(e) {
+    const targetHref = $(this).attr('href');
 
-// // Scroll certain amounts from current position
-// window.scrollBy({
-// 	top: 100, // could be negative value
-// 	left: 0,
-// 	behavior: 'smooth'
-// });
+    $('html, body').animate(
+      {
+        scrollTop: $(targetHref).offset().top - headerHeight
+      },
+      500
+    );
 
-// Scroll to a certain element
-document.querySelector('#main').scrollIntoView({
-	behavior: 'smooth'
+    e.preventDefault();
+  });
 });
+
+// jQuery(document).ready(function() {
+// 	$('#test').click(function(e) {
+// 		alert('Clicked');
+
+// 		e.preventDefault();
+// 	});
+// });
