@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #fff;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -98,6 +98,7 @@ body {
 }
 
 .jumbotron img {
+  margin: 0 auto;
   padding-top: 20vh;
   width: 75%;
 }
@@ -122,7 +123,11 @@ body {
 
 #sponsors {
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+}
+#sponsors > * {
+  flex: 0 1 160px;
 }
 
 #links ul li {
@@ -181,7 +186,11 @@ footer p {
   }
   #sponsors {
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+  }
+  #sponsors > * {
+    flex: 1 1 auto;
   }
 }
 
@@ -195,4 +204,8 @@ footer p {
   html {
     font-size: 125%;
   }
+}
+
+footer {
+  color: red;
 }
