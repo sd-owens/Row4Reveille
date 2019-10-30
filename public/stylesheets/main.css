@@ -143,9 +143,10 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 #sponsors > * {
-  flex: 0 1 160px;
+  flex-basis: 33%; /* each block takes up 33% of space*/
 }
 
 #links ul li {
