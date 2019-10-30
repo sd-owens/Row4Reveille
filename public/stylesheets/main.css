@@ -13,7 +13,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  /* margin-bottom: 0px; */
+  z-index: 2;
 }
 
 .navbar-default.transparent {
@@ -85,6 +85,7 @@ body {
 }
 
 .jumbotron {
+  position: relative;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -95,6 +96,23 @@ body {
   margin-bottom: 0;
   color: white;
   padding-bottom: 10px;
+  z-index: 0;
+}
+
+.jumbotron > .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* background-color: rgba(255, 132, 230, 0.2); */
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.inner * {
+  position: relative;
+  z-index: 2;
 }
 
 .jumbotron img {
@@ -184,19 +202,20 @@ footer p {
   html {
     font-size: 90%;
   }
-  #sponsors {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  #sponsors > * {
-    flex: 1 1 auto;
-  }
 }
 
 @media (min-width: 992px) {
   html {
     font-size: 100%;
+  }
+  #sponsors {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+  }
+  #sponsors > * {
+    flex: 1 1 auto;
   }
 }
 
