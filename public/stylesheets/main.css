@@ -248,9 +248,9 @@ footer p {
     align-items: center;
     justify-items: center;
   }
-  #sponsors > * {
+  /* #sponsors > * {
     flex: 1 1 auto;
-  }
+  } */
 }
 
 @media (min-width: 1200px) {
