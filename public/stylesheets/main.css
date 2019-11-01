@@ -87,17 +87,32 @@ body {
 
 .jumbotron {
   position: relative;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background: url(/images/Row_for_Reveille_X4.jpg) no-repeat center center;
   height: 100vh;
   border-radius: 0px;
   margin-bottom: 0;
   color: white;
   padding-bottom: 10px;
   z-index: 0;
+  overflow: hidden;
+
+  /* z-index: 1; */
+}
+
+.jumbotron .bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(/images/Row_for_Reveille_X4.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(7px);
+  -webkit-filter: blur(7px);
+  z-index: 0;
+  transform: scale(1.03);
+  overflow: hidden;
 }
 
 .jumbotron > .overlay {
@@ -106,12 +121,11 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(255, 132, 230, 0.15);
-  /* background-color: rgba(0, 51, 102, 0.2); */
+  background-color: rgba(255, 255, 255, 0.1);
   z-index: 1;
 }
 
-.inner * {
+.jumbotron * {
   position: relative;
   z-index: 2;
 }
@@ -138,6 +152,7 @@ body {
 
 #logo-splash .btn {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  background-color: rgba(241, 10, 10, 0.75);
 }
 
 .jumbotron h2 {
@@ -196,6 +211,10 @@ a:hover {
 
 footer p {
   color: white;
+}
+
+.price strong {
+  color: red;
 }
 
 @media (min-width: 576px) {
