@@ -108,8 +108,8 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(7px);
-  -webkit-filter: blur(7px);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
   z-index: 0;
   transform: scale(1.03);
   overflow: hidden;
