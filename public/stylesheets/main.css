@@ -133,7 +133,10 @@ body {
 .jumbotron img {
   margin: 0 auto;
   /* padding-top: 20vh; */
-  width: 75%;
+  /* width: 75%; */
+  max-width: 50vw;
+  width: 100%;
+  height: auto;
 }
 
 .vertical-center {
@@ -221,10 +224,10 @@ footer p {
   html {
     font-size: 75%;
   }
-  /* .jumbotron img {
+  .jumbotron img {
     width: 60%;
-    padding-top: 5vh;
-  } */
+    /* padding-top: 5vh; */
+  }
 }
 
 @media (min-width: 768px) {
@@ -232,9 +235,9 @@ footer p {
     font-size: 90%;
   }
   .jumbotron img {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* padding-top: 20vh; */
-    width: 55%;
+    /* width: 45%; */
   }
 }
 
@@ -251,6 +254,17 @@ footer p {
   /* #sponsors > * {
     flex: 1 1 auto;
   } */
+  .jumbotron img {
+    /* margin: 0 auto; */
+    /* padding-top: 20vh; */
+    /* width: 35%; */
+    margin: 0 auto;
+    /* padding-top: 20vh; */
+    /* width: 75%; */
+    max-width: 30vw;
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (min-width: 1200px) {
